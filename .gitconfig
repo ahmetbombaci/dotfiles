@@ -1,0 +1,7 @@
+[user]
+	name = Ahmet Bombaci
+	email = ahmetbombaci@yahoo.com
+[credential]
+	helper = store
+[core]
+	editor = vim
