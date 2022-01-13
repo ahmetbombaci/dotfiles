@@ -26,7 +26,19 @@ alias pbpaste='xclip -selection clipboard -o'
 
 # random
 alias k=kubectl
+alias fd=fdfind
+alias open=xdg-open
 
 # hints
 alias hint_retext='retext'
-
+# https://itsfoss.com/download-youtube-linux/
+alias hint_youtube-dl='youtube-dl'
+# modern `du`
+alias hint_ncdu=ncdu
+alias hint_htop=htop
+# modern `df`
+alias hint_duf=duf
+# https://pygments.org/faq/
+# $ pip3 install pygments
+# Requirement already satisfied: pygments in ./.local/lib/python3.8/site-packages (2.10.0)
+alias hint_pygmentize=pygmentize

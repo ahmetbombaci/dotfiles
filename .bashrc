@@ -119,3 +119,6 @@ fi
 
 # Add ssh key passphrase
 # ssh-add -A
+
+# Use vim mode instead of default emacs
+set -o vi
