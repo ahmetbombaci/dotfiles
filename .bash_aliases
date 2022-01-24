@@ -28,6 +28,7 @@ alias pbpaste='xclip -selection clipboard -o'
 alias k=kubectl
 alias fd=fdfind
 alias open=xdg-open
+alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
 
 # hints
 alias hint_retext='retext'
@@ -42,3 +43,5 @@ alias hint_duf=duf
 # $ pip3 install pygments
 # Requirement already satisfied: pygments in ./.local/lib/python3.8/site-packages (2.10.0)
 alias hint_pygmentize=pygmentize
+# display the contents of gzip-compressed text files
+alias hint_zless=zless
