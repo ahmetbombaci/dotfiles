@@ -121,6 +121,7 @@ fi
 # ssh-add -A
 
 # HISTIGNORE='man *:ls:ls *:ll:cd *:mkdir *'
+export PS4='TRACE$LINENO + '
 
 # https://github.com/m-thirumal/installation_guide/blob/master/maven/upgrade_maven.md
 export M2_HOME=/usr/local/apache-maven/apache-maven-3.8.4

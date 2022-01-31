@@ -68,6 +68,14 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 set mouse+=a
 
+" Instead of 8, use 4 spaces for tab
+set tabstop=4
+
+" This causes vim to indent a new line the same amount as the line just typed. This
+" speeds up typing on many kinds of programming constructs. To stop indentation,
+" press Ctrl-d.
+" set autoindent
+
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
 " for movement, rather than using more efficient movement commands, is also a

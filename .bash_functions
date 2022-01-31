@@ -1,3 +1,8 @@
+myman() {
+	# awk, sed, ...
+	google-chrome https://quickref.me/$1 & 
+}
+
 k8s-watch() {
 	watch -n 10 "kubect get pods" | grep "$@"
 }
