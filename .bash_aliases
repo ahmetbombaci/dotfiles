@@ -1,17 +1,50 @@
-# apt-get
-alias agi='sudo apt-get install'
-alias hint_agi_recommended_by_zim='sudo apt-get install --install-recommends zim'
-alias agr='sudo apt-get remove'
-alias agu='sudo apt-get update'
-alias acs='apt-cache search'
+# apt
+alias aptup='sudo apt update && sudo apt upgrade'
+alias aptupd='sudo apt update'
+alias aptupg='sudo apt upgrade'
+alias aptin='sudo apt-get install'
+alias aptrm='sudo apt-get remove'
+alias aptupd='sudo apt-get update'
+alias aptfd='apt-cache search'
+alias hint_aptin_recommended_by_zim='sudo apt-get install --install-recommends zim'
 alias hint_show_packages_zim_recommends='apt-cache show zim | grep '^Recommends:''
 
-# some more ls aliases
+# ls 
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# Java Alias
+# cd 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .3='....'
+alias .4='cd ../../../..'
+
+# confirmations
+alias mv='mv -i'
+alias cp='cp -i'
+alias rm='rm -i'
+alias ln='ln -i'
+
+# Play audio files in current dir by type
+alias playwav='rhythmbox *.wav'
+alias playogg='rhythmbox *.ogg'
+alias playmp3='rhythmbox *.mp3'
+
+# Play video files in current dir by type
+alias playavi='vlc *.avi'
+alias playmov='vlc *.mov'
+alias playmp4='vlc *.mp4'
+
+# adding flags
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB
+
+# get error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+# java 
 alias updjava='sudo update-alternatives --config java'
 alias java8='source /home/ahmet/bin/java8.sh'
 alias java17='source /home/ahmet/bin/java17.sh'
@@ -26,6 +59,26 @@ alias mvnskipall='mvn clean install -Ddockerfile.skip -Dmaven.test.skip -Dchecks
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
+# gpg encryption
+# verify signature for isos
+alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
+# receive the key of a developer
+alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
+
+
+# youtube-dl
+# https://itsfoss.com/download-youtube-linux/
+alias yta-aac="youtube-dl --extract-audio --audio-format aac "
+alias yta-best="youtube-dl --extract-audio --audio-format best "
+alias yta-flac="youtube-dl --extract-audio --audio-format flac "
+alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
+alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
+alias yta-opus="youtube-dl --extract-audio --audio-format opus "
+alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
+alias yta-wav="youtube-dl --extract-audio --audio-format wav "
+alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+
+
 # random
 alias k=kubectl
 alias fd=fdfind
@@ -36,11 +89,11 @@ alias dateutc="date -u +'%Y-%m-%dT%H:%M:%SZ'"
 alias dateist="TZ=Europe/Istanbul date"
 alias diff='diff --color -u'
 alias rfedays='python3 -c "from datetime import date as d; print (d.today() - d(2021, 11, 24))"'
+alias mkdir='mkdir -pv'
+
 
 # hints
 alias hint_retext='retext'
-# https://itsfoss.com/download-youtube-linux/
-alias hint_youtube-dl='youtube-dl'
 # modern `du`
 alias hint_ncdu=ncdu
 alias hint_htop=htop
@@ -52,3 +105,8 @@ alias hint_duf=duf
 alias hint_pygmentize=pygmentize
 # display the contents of gzip-compressed text files
 alias hint_zless=zless
+# cli browser
+alias hint_w3m=w3m
+# cli sound recorder/player
+alias hint_arecord='arecord -d 10 -f cd -t wav foobar.wav'
+alias hint_aplay='aplay foobar.wav'
