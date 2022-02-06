@@ -59,11 +59,6 @@ rabbit-local() {
 	docker run -d --hostname local-rabbit --name local-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management
 }
 
-
-curlGET() {
-	curl -i -k -v -XGET "https://example.com/v1/api"
-}
-
 ext() {
   if [ -f "$1" ] ; then
     case $1 in

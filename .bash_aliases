@@ -110,3 +110,5 @@ alias hint_w3m=w3m
 # cli sound recorder/player
 alias hint_arecord='arecord -d 10 -f cd -t wav foobar.wav'
 alias hint_aplay='aplay foobar.wav'
+alias hint_list_scanners='scanimage -L'
+alias hint_scanner='scanimage --format=jpeg > myscan.jpeg'

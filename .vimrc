@@ -68,6 +68,11 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 set mouse+=a
 
+" Default value was `sgr`
+" This is good for resizing windows via mouse
+set ttymouse=xterm2
+
+
 " Instead of 8, use 4 spaces for tab
 set tabstop=4
 
