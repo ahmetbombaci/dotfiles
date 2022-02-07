@@ -84,13 +84,21 @@ alias k=kubectl
 alias fd=fdfind
 alias open=xdg-open
 alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
+# https://pygments.org/faq/
+# $ pip3 install pygments
+# Requirement already satisfied: pygments in ./.local/lib/python3.8/site-packages (2.10.0)
+alias ccat=pygmentize
 alias dateutc="date -u +'%Y-%m-%dT%H:%M:%SZ'"
 # Use tzselect for time zones.
 alias dateist="TZ=Europe/Istanbul date"
 alias diff='diff --color -u'
 alias rfedays='python3 -c "from datetime import date as d; print (d.today() - d(2021, 11, 24))"'
+# https://github.com/chucknorris-io/chuck-api
+alias chuck-norris='curl -s https://api.icndb.com/jokes/random?limitTo=[nerdy] | jq ''.value.joke'''
 alias mkdir='mkdir -pv'
-
+alias genpassw='openssl rand -base64 16'
+alias cheat='sensible-browser https://www.golinuxcloud.com/linux-commands-cheat-sheet/'
+alias trt2='vlc https://tv-trt2.medya.trt.com.tr/master_720.m3u8'
 
 # hints
 alias hint_retext='retext'
@@ -99,10 +107,6 @@ alias hint_ncdu=ncdu
 alias hint_htop=htop
 # modern `df`
 alias hint_duf=duf
-# https://pygments.org/faq/
-# $ pip3 install pygments
-# Requirement already satisfied: pygments in ./.local/lib/python3.8/site-packages (2.10.0)
-alias hint_pygmentize=pygmentize
 # display the contents of gzip-compressed text files
 alias hint_zless=zless
 # cli browser
@@ -112,3 +116,6 @@ alias hint_arecord='arecord -d 10 -f cd -t wav foobar.wav'
 alias hint_aplay='aplay foobar.wav'
 alias hint_list_scanners='scanimage -L'
 alias hint_scanner='scanimage --format=jpeg > myscan.jpeg'
+alias hint_fortune='fortune'
+alias hint_cowsay='cowsay'
+alias hint_gitignore='sensible-browser https://www.toptal.com/developers/gitignore/api/java,intellij'
