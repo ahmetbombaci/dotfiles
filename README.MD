@@ -8,6 +8,10 @@
 
 * `sudo ln -s /home/ahmet/dotfiles/conky.conf /etc/conky/conky.conf`
 
+# RSYNC
+
+* `.cvsignore` is added for rsync to skip those files/folders during backup.
+
 # REFERENCES
 
 * https://dotfiles.github.io/
