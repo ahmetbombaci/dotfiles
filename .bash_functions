@@ -1,6 +1,11 @@
-myman() {
+my_man() {
+	section=${2-1}
+	sensible-browser https://linux.die.net/man/$section/$1 &
+}
+
+remind_me() {
 	# awk, sed, ...
-	google-chrome https://quickref.me/$1 & 
+	sensible-browser https://quickref.me/$1 & 
 }
 
 k8s-watch() {

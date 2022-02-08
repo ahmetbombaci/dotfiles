@@ -40,6 +40,9 @@ alias playmp4='vlc *.mp4'
 # adding flags
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
+alias diff='diff --color -u'
+alias ccat=pygmentize
+alias mkdir='mkdir -pv'
 
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
@@ -78,6 +81,17 @@ alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
 alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 
+# cheatsheets
+# man <cmd>
+# <cmd> --help
+# tldr <cmd>
+# linux.die.net
+alias myman='my_man'
+# quickref.me
+alias remindme='remind_me'
+alias quickref='remind_me'
+alias cheat-linux='sensible-browser https://www.golinuxcloud.com/linux-commands-cheat-sheet/ & '
+
 
 # random
 alias k=kubectl
@@ -87,17 +101,13 @@ alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
 # https://pygments.org/faq/
 # $ pip3 install pygments
 # Requirement already satisfied: pygments in ./.local/lib/python3.8/site-packages (2.10.0)
-alias ccat=pygmentize
 alias dateutc="date -u +'%Y-%m-%dT%H:%M:%SZ'"
 # Use tzselect for time zones.
 alias dateist="TZ=Europe/Istanbul date"
-alias diff='diff --color -u'
 alias rfedays='python3 -c "from datetime import date as d; print (d.today() - d(2021, 11, 24))"'
 # https://github.com/chucknorris-io/chuck-api
 alias chuck-norris='curl -s https://api.icndb.com/jokes/random?limitTo=[nerdy] | jq ''.value.joke'''
-alias mkdir='mkdir -pv'
 alias genpassw='openssl rand -base64 16'
-alias cheat='sensible-browser https://www.golinuxcloud.com/linux-commands-cheat-sheet/'
 alias trt2='vlc https://tv-trt2.medya.trt.com.tr/master_720.m3u8'
 
 # hints
@@ -119,3 +129,6 @@ alias hint_scanner='scanimage --format=jpeg > myscan.jpeg'
 alias hint_fortune='fortune'
 alias hint_cowsay='cowsay'
 alias hint_gitignore='sensible-browser https://www.toptal.com/developers/gitignore/api/java,intellij'
+alias hint_xplanet='xplanet -window'
+alias hint_jo='jo'
+alias hint_httpbin='curl -X GET "https://httpbin.org/get" -H "accept: application/json"'
