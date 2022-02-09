@@ -15,7 +15,7 @@ alias show_xplanet='xplanet -window'
 # https://github.com/chucknorris-io/chuck-api
 alias chuck-norris='curl -s https://api.icndb.com/jokes/random?limitTo=[nerdy] | jq ''.value.joke'''
 alias fortune_teller='fortune'
-alias cowsaid='cowsay'
+alias neocow='neofetch --ascii "$(fortune | cowsay -W 30)"'
 
 # ls 
 alias ll='ls -alF'
