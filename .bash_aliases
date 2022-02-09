@@ -1,3 +1,5 @@
+alias sbrc="source ~/.bashrc && source ~/.bash_aliases && source ~/.bash_functions"
+
 # apt
 alias aptup='sudo apt update && sudo apt upgrade'
 alias aptupd='sudo apt update'
@@ -15,11 +17,10 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # cd 
+# Alternative: `up n`
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias .3='....'
-alias .4='cd ../../../..'
 
 # confirmations
 alias mv='mv -i'
@@ -46,6 +47,10 @@ alias mkdir='mkdir -pv'
 
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
+
+# git
+# cd to git root directory
+alias cdgr='cd "$(git root)"'
 
 # java 
 alias updjava='sudo update-alternatives --config java'

@@ -82,6 +82,8 @@
 	# Show the user email for the current repository.
 	whoami = config user.email
 
+	root = rev-parse --show-toplevel
+
 	# Hints:
 	# hintignore = git update-index --skip-worktree filename
 	# hintnotignore = git update-index --no-skip-worktree filename
