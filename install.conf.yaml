@@ -7,14 +7,16 @@
 
 - link:
     ~/.axelrc:
-    ~/.bash:
-    ~/.bash_profile:
+    ~/.bash_aliases:
+    ~/.bash_functions:
     ~/.bashrc:
+    ~/.cvsignore:
     ~/.dotfiles: ''
     ~/.gitconfig:
     ~/.gitignore_global:
     ~/.gnupg/gpg.conf:
     ~/.inputrc:
+    ~/.profile:
     ~/.vim:
     ~/.vimrc:
     ~/.zshrc:
