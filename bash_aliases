@@ -115,6 +115,12 @@ alias chuck-norris='curl -s https://api.icndb.com/jokes/random?limitTo=[nerdy] |
 alias genpassw='openssl rand -base64 16'
 alias trt2='vlc https://tv-trt2.medya.trt.com.tr/master_720.m3u8'
 
+# Mirror a website
+alias mirrorsite='wget -m -k -K -E -e robots=off'
+
+# Mirror stdout to stderr, useful for seeing data going through a pipe
+alias peek='tee >(cat 1>&2)'
+
 # hints
 alias hint_retext='retext'
 # modern `du`
