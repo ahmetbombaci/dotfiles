@@ -6,17 +6,16 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.axelrc:
     ~/.bash_aliases:
     ~/.bash_functions:
     ~/.bashrc:
+    /etc/conky/conky.conf:
+      path: conky.conf
     ~/.cvsignore:
     ~/.dotfiles: ''
     ~/.gitconfig:
     ~/.gitignore_global:
-    ~/.gnupg/gpg.conf:
     ~/.inputrc:
     ~/.profile:
-    ~/.vim:
     ~/.vimrc:
     ~/.zshrc:
