@@ -6,6 +6,7 @@
 - clean: ['~', '~/.config']
 
 - link:
+    ~/.aliases:
     ~/.bash_aliases:
     ~/.bash_functions:
     ~/.bashrc:

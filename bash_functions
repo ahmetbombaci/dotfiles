@@ -8,6 +8,11 @@ remind_me() {
 	sensible-browser https://quickref.me/$1 & 
 }
 
+help_sc() {
+	# Shell Checker
+	sensible-browser https://github-wiki-see.page/m/koalaman/shellcheck/wiki/SC$1 & 
+}
+
 # https://bash-prompt.net/guides/bash-colorize-man/
 man() {
     env \

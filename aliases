@@ -1,0 +1,72 @@
+
+alias fd=fdfind
+alias open=xdg-open
+
+
+alias sensible-browser='brave'
+
+# adding flags
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB
+# Emulate mac pbcopy/pbpaste
+
+# java 
+alias updjava='sudo update-alternatives --config java'
+alias java8='source /home/ahmet/bin/java8.sh'
+alias java17='source /home/ahmet/bin/java17.sh'
+
+# Emulate mac pbcopy/pbpaste
+# https://garywoodfine.com/use-pbcopy-on-ubuntu/
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+
+
+# Play audio files in current dir by type
+alias playwav='rhythmbox *.wav'
+alias playogg='rhythmbox *.ogg'
+alias playmp3='rhythmbox *.mp3'
+
+# cli sound recorder/player
+alias cli_arecord="arecord -f cd -t wav your_record_${RANDOM}.wav"
+alias cli_aplay="aplay your_record_*.wav"
+
+
+# Play video files in current dir by type
+alias playavi='vlc *.avi'
+alias playmov='vlc *.mov'
+alias playmp4='vlc *.mp4'
+
+# youtube-dl
+# https://itsfoss.com/download-youtube-linux/
+alias yta-aac="youtube-dl --extract-audio --audio-format aac "
+alias yta-best="youtube-dl --extract-audio --audio-format best "
+alias yta-flac="youtube-dl --extract-audio --audio-format flac "
+alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
+alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
+alias yta-opus="youtube-dl --extract-audio --audio-format opus "
+alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
+alias yta-wav="youtube-dl --extract-audio --audio-format wav "
+alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+
+# TV
+alias trt2='vlc https://tv-trt2.medya.trt.com.tr/master_720.m3u8'
+
+
+# cheatsheets
+# man <cmd>
+# <cmd> --help
+# tldr <cmd>
+# linux.die.net
+alias myman='my_man'
+# quickref.me
+alias remindme='remind_me'
+alias quickref='remind_me'
+alias cheat-linux='sensible-browser https://www.golinuxcloud.com/linux-commands-cheat-sheet/ & '
+
+# date utils
+alias week='date +%V'
+alias dateutc="date -u +'%Y-%m-%dT%H:%M:%SZ'"
+# Use tzselect for time zones.
+alias dateist="TZ=Europe/Istanbul date"
+alias rfedays='python3 -c "from datetime import date as d; print (d.today() - d(2021, 11, 24))"'
+

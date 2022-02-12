@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases catimg chucknorris command-not-found colored-man-pages colorize common-aliases emoji emoji-clock extract fd genpass git gitignore git-prompt mvn)
+plugins=(aliases catimg chucknorris command-not-found colored-man-pages colorize common-aliases emoji emoji-clock extract fd genpass git gitignore git-prompt mvn zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias emoji-help="sensible-browser https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/emoji"
 
-# Emulate mac pbcopy/pbpaste
-# https://garywoodfine.com/use-pbcopy-on-ubuntu/
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
