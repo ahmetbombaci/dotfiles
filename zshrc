@@ -109,3 +109,7 @@ if [ -f ~/.functions ]; then
     . ~/.functions
 fi
 
+if [ -f ~/.exports ]; then
+    . ~/.exports
+fi
+

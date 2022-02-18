@@ -109,6 +109,11 @@ if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
 fi
 
+#  Export definitions
+if [ -f ~/.exports ]; then
+    . ~/.exports
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -125,13 +130,6 @@ fi
 # ssh-add -A
 
 # HISTIGNORE='man *:ls:ls *:ll:cd *:mkdir *'
-export PS4='TRACE$LINENO + '
-
-# https://github.com/m-thirumal/installation_guide/blob/master/maven/upgrade_maven.md
-export M2_HOME=/usr/local/apache-maven/apache-maven-3.8.4
-export M2=$M2_HOME/bin
-export MAVEN_OPTS="-Xms256m -Xmx512m"
-export PATH=$M2:$PATH
 
 # Use vim mode instead of default emacs
 set -o vi

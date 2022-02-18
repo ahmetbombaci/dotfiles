@@ -50,7 +50,17 @@ alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 
 # TV
 alias trt2='vlc https://tv-trt2.medya.trt.com.tr/master_720.m3u8'
+# https://github.com/iptv-org/iptv/blob/master/channels/tr.m3u
+alias aksutv='vlc https://waw2.artiyerelmedya.net/aksutv/bant1/playlist.m3u8'
 
+# Radio
+alias trtfm='mpv https://radio-trtfm.live.trt.com.tr/master.m3u8'
+alias trtradyo1='mpv https://radio-trtradyo1.live.trt.com.tr/master_128.m3u8'
+alias trtradyo3=' mpv https://radio-trtradyo3.live.trt.com.tr/master_128.m3u8'
+alias trtradyocukurova='mpv https://radio-trtcukurova.live.trt.com.tr/master_128.m3u8'
+# https://radyodelisi.blogspot.com/2019/01/turk-radyolari-2019-guncel-ip-adresleri.html
+alias radyoeksen='mpv https://ssldyg.radyotvonline.com/pozitif/smil:eksen.smil/playlist.m3u8'
+alias radyotrafik='mpv https://ssl4.radyotvonline.com/radyohome/radyotrafikhome.stream_aac/playlist.m3u8'
 
 # cheatsheets
 # man <cmd>

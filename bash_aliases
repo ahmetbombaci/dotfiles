@@ -4,7 +4,7 @@ alias k=kubectl
 # $ pip3 install pygments
 # Requirement already satisfied: pygments in ./.local/lib/python3.8/site-packages (2.10.0)
 alias ccat=pygmentize
-alias cli-browser=w3m
+alias cli-browser=lynx
 alias scanner_list='scanimage -L'
 alias scan_this="scanimage --format=jpeg > myscan_$(date +%s).jpeg"
 alias tb="nc termbin.com 9999"
