@@ -73,6 +73,7 @@ alias remindme='remind_me'
 alias quickref='remind_me'
 alias cheat-linux='sensible-browser https://www.golinuxcloud.com/linux-commands-cheat-sheet/ & '
 alias turkce='open ~/github/ubuntu/turkce-klavye.png'
+alias ubuntu-help='make -f ~/github/ubuntu/Makefile'
 
 # date utils
 alias week='date +%V'
