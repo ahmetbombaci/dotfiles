@@ -73,6 +73,8 @@ alias myman='my_man'
 alias remindme='remind_me'
 alias quickref='remind_me'
 alias cheat-linux='sensible-browser https://www.golinuxcloud.com/linux-commands-cheat-sheet/ & '
+alias cheat-react='sensible-browser https://github.com/typescript-cheatsheets/react & '
+alias cheat-react-native='sensible-browser https://github.com/typescript-cheatsheets/react-native & '
 alias turkce='open ~/github/ubuntu/turkce-klavye.png'
 alias ubuntu-help='make -f ~/github/ubuntu/Makefile'
 
