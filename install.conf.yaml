@@ -21,5 +21,6 @@
     ~/.gitignore_global:
     ~/.inputrc:
     ~/.profile:
+    ~/.tmux.conf:
     ~/.vimrc:
     ~/.zshrc:

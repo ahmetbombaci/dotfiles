@@ -61,6 +61,9 @@ alias genpassw='openssl rand -base64 16'
 # hints
 # modern `du`
 alias hint_ncdu=ncdu
+# modern `ls`
+# https://the.exa.website/features
+alias hint_exa=exa
 alias hint_htop=htop
 # modern `df`
 alias hint_duf=duf
