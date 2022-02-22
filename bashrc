@@ -131,7 +131,7 @@ fi
 
 # HISTIGNORE='man *:ls:ls *:ll:cd *:mkdir *'
 
-colorscript random
+colorscript -e tux
 
 # Use vim mode instead of default emacs
 set -o vi
