@@ -1,3 +1,4 @@
+alias tmux-s1='tmux new-session "tmux source-file ~/session1"'
 
 alias fd=fdfind
 alias open=xdg-open
