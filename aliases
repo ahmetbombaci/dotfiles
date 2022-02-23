@@ -1,3 +1,4 @@
+alias android-studio='/usr/local/android-studio/bin/studio.sh'
 alias tmux-s1='tmux new-session "tmux source-file ~/session1"'
 
 alias fd=fdfind
