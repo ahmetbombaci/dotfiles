@@ -96,3 +96,5 @@ set tabstop=4
 "inoremap <Right> <ESC>:echoe "Use l"<CR>
 "inoremap <Up>    <ESC>:echoe "Use k"<CR>
 "inoremap <Down>  <ESC>:echoe "Use j"<CR>
+
+nnoremap <F2> :exe getline(".")<CR>

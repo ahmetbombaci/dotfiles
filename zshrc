@@ -70,7 +70,26 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases catimg chucknorris command-not-found colored-man-pages colorize common-aliases emoji emoji-clock extract fd genpass git gitignore git-prompt globalias mvn zsh-syntax-highlighting)
+plugins=(aliases 
+		catimg 
+		chucknorris 
+		command-not-found 
+		colored-man-pages 
+		colorize 
+		common-aliases
+	   	emoji 
+		emoji-clock 
+		extract 
+		fd 
+		genpass 
+		git 
+		gitignore 
+		git-prompt 
+		globalias 
+		mvn 
+		zsh-autosuggestions
+		zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
