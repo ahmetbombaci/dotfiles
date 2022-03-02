@@ -1,3 +1,5 @@
+alias ahmet="asciiart --width 50 ~/Pictures/ahmet.jpg"
+alias dorina="asciiart --width 50 --color ~/Pictures/dorina.jpg"
 alias android-sha1='keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android'
 alias tmux-s1='tmux new-session "tmux source-file ~/session1"'
 
@@ -31,6 +33,9 @@ alias playmp3='rhythmbox *.mp3'
 # cli sound recorder/player
 alias cli_arecord="arecord -f cd -t wav your_record_${RANDOM}.wav"
 alias cli_aplay="aplay your_record_*.wav"
+alias ffmpeg_record_screen='ffmpeg -f gdigrab -framerate 30 -i desktop -c:v libx264 output_file.mp4 -f dshow -i audio="Stereo Mix (Realtek Audio)" output_file.mp4'
+alias ffmpeg_record_screen_no_sound="ffmpeg -f gdigrab -framerate 30 -i desktop -c:v libx264 -qp 0 output.mp4"
+alias hint_ffmpeg_boost_volume='ffmpeg -i video.mp3 -filter:a “volume=2” output_file.mp3'
 
 
 # Play video files in current dir by type

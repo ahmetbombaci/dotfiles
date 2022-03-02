@@ -127,3 +127,8 @@ stopwatch() {
   # or
   # now=$(date +%s)sec; watch -n0.1 -p TZ=UTC date --date now-$now +%H:%M:%S.%N
 }
+
+tureng() {
+	encoded_url=$(urlencode $1)
+	curl -sL https://tureng.com/en/turkish-english/"${encoded_url}" | grep '"rc0 hidden-xs"\|"hidden-xs"\|"en tm"\|"tr ts"'
+}
