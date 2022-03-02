@@ -38,8 +38,6 @@ alias ln='ln -i'
 # adding flags
 alias diff='diff --color -u'
 alias mkdir='mkdir -pv'
-# get error messages from journalctl
-alias jctl="journalctl -p 3 -xb"
 
 # maven
 alias mvncainstall='mvn clean install -Ddockerfile.skip=true -Djib.skip=true'

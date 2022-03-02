@@ -6,13 +6,15 @@ alias tmux-s1='tmux new-session "tmux source-file ~/session1"'
 alias fd=fdfind
 alias open=xdg-open
 
-
 alias sensible-browser='brave'
 
 # adding flags
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
-# Emulate mac pbcopy/pbpaste
+
+# get error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+alias cron-log="grep CRON /var/log/syslog"
 
 # java 
 alias updjava='sudo update-alternatives --config java'
@@ -36,7 +38,7 @@ alias cli_aplay="aplay your_record_*.wav"
 alias ffmpeg_record_screen='ffmpeg -f gdigrab -framerate 30 -i desktop -c:v libx264 output_file.mp4 -f dshow -i audio="Stereo Mix (Realtek Audio)" output_file.mp4'
 alias ffmpeg_record_screen_no_sound="ffmpeg -f gdigrab -framerate 30 -i desktop -c:v libx264 -qp 0 output.mp4"
 alias hint_ffmpeg_boost_volume='ffmpeg -i video.mp3 -filter:a “volume=2” output_file.mp3'
-
+alias vlc-record-trt2="timeout 12s cvlc https://tv-trt2.medya.trt.com.tr/master_720.m3u8 --sout=file/ts:~/vlc-recording/trt2-$(date +\"%Y%m%d%H%M\").mpg"
 
 # Play video files in current dir by type
 alias playavi='vlc *.avi'
@@ -68,6 +70,13 @@ alias trtradyocukurova='mpv https://radio-trtcukurova.live.trt.com.tr/master_128
 # https://radyodelisi.blogspot.com/2019/01/turk-radyolari-2019-guncel-ip-adresleri.html
 alias radyoeksen='mpv https://ssldyg.radyotvonline.com/pozitif/smil:eksen.smil/playlist.m3u8'
 alias radyotrafik='mpv https://ssl4.radyotvonline.com/radyohome/radyotrafikhome.stream_aac/playlist.m3u8'
+# https://www.avforums.com/threads/bbc-internet-radio-to-end-on-22-march-for-denon-users.2349137/
+# https://gist.githubusercontent.com/bpsib/67089b959e4fa898af69fea59ad74bc3/raw/8387865b9b00e9aa0d299e2dc76c8ba4324cccf7/BBC-Radio-mp3.m3u
+alias radiobbc1='mpv http://stream.live.vc.bbcmedia.co.uk/bbc_radio_one'
+alias radiobbc2='mpv http://stream.live.vc.bbcmedia.co.uk/bbc_radio_two'
+alias radiobbc3='mpv http://stream.live.vc.bbcmedia.co.uk/bbc_radio_three'
+alias radiobbc6='mpv http://stream.live.vc.bbcmedia.co.uk/bbc_6music'
+alias radiobbc1x='mpv http://stream.live.vc.bbcmedia.co.uk/bbc_1xtra'
 
 # cheatsheets
 # man <cmd>
