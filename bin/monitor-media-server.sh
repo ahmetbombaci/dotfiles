@@ -4,7 +4,7 @@
 
 source SECRETS
 
-if [ $( curl -s -o /dev/null -w "%{http_code}" 192.168.0.24:8200) -ne 200 ];
+if [ "$( curl -s -o /dev/null -w "%{http_code}" 192.168.0.24:8200)" -ne 200 ];
 then
         curl -X POST \
              -H 'Content-Type: application/json' \
