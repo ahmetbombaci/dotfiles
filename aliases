@@ -78,6 +78,8 @@ alias radiobbc2='mpv http://stream.live.vc.bbcmedia.co.uk/bbc_radio_two'
 alias radiobbc3='mpv http://stream.live.vc.bbcmedia.co.uk/bbc_radio_three'
 alias radiobbc6='mpv http://stream.live.vc.bbcmedia.co.uk/bbc_6music'
 alias radiobbc1x='mpv http://stream.live.vc.bbcmedia.co.uk/bbc_1xtra'
+alias radyodinle='sensible-browser https://www.onlineradyodinle.net/'
+alias tvizle='sensible-browser https://www.canlitv.mobi/'
 
 # cheatsheets
 # man <cmd>
