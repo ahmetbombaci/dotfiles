@@ -1,4 +1,5 @@
-alias uscissucks='python3 uscis_sucks.py | pbcopy'
+alias uscissucks='source ~/bin/SECRETS; python3 ~/bin/uscis_sucks.py --mtype all --tweet'
+alias uscissucksrandom='source ~/bin/SECRETS; python3 ~/bin/uscis_sucks.py --mtype random --tweet'
 alias ahmet="asciiart --width 50 ~/Pictures/ahmet.jpg"
 alias dorina="asciiart --width 50 --color ~/Pictures/dorina.jpg"
 alias android-sha1='keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android'
