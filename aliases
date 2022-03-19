@@ -64,8 +64,8 @@ alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 
 # TV
-# alias trt2='vlc https://tv-trt2.medya.trt.com.tr/master_720.m3u8'
-alias trt2='mpv https://izmir.tvizlehd.com/trt2.m3u8\?tkn\=cA40L81K4OtmyIyUmxdM1A\&tms\=1646953218\&hst\=www.canlitv.me'
+alias trt2='vlc https://tv-trt2.medya.trt.com.tr/master_720.m3u8'
+# alias trt2='mpv https://izmir.tvizlehd.com/trt2.m3u8\?tkn\=cA40L81K4OtmyIyUmxdM1A\&tms\=1646953218\&hst\=www.canlitv.me'
 # https://github.com/iptv-org/iptv/blob/master/channels/tr.m3u
 alias aksutv='vlc https://waw2.artiyerelmedya.net/aksutv/bant1/playlist.m3u8'
 

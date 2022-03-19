@@ -7,3 +7,7 @@ export M2=$M2_HOME/bin
 export MAVEN_OPTS="-Xms256m -Xmx512m"
 
 export TERMINAL=alacritty
+
+
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$HOME/.emacs.d/bin:$PATH"
