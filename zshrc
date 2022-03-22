@@ -85,7 +85,7 @@ plugins=(aliases
 		git 
 		gitignore 
 		git-prompt 
-		globalias 
+		# globalias 
 		mvn 
 		zsh-autosuggestions
 		zsh-syntax-highlighting

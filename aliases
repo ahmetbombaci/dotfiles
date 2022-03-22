@@ -7,6 +7,7 @@ alias tmux-s1='tmux new-session "tmux source-file ~/session1"'
 # sudo npm install --global cadate
 alias today='cadate --full --calendar islamic'
 alias whathappenedtoday='calendar -A 0'
+alias wtf=wtfutil
 
 alias fd=fdfind
 alias open=xdg-open

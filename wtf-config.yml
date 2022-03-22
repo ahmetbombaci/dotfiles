@@ -1,0 +1,192 @@
+wtf:
+  colors:
+    border:
+      focusable: darkslateblue
+      focused: orange
+      normal: gray
+  grid:
+    columns: [32, 32, 32, 32, 90]
+    rows: [10, 10, 10, 4, 4, 90]
+  refreshInterval: 1
+  mods:
+    digitalclock:
+      color: orange
+      enabled: true
+      font: bigfont
+      hourFormat: 12
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 1s
+      title: "big clock"
+      type: "digitalclock"
+    clocks_a:
+      colors:
+        rows:
+          even: "lightblue"
+          odd: "white"
+      enabled: false
+      locations:
+        Chicago: "America/Chicago"
+        UTC: "UTC"
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 15
+      sort: "alphabetical"
+      title: "Clocks A"
+      type: "clocks"
+    clocks_b:
+      colors:
+        rows:
+          even: "lightblue"
+          odd: "white"
+      enabled: true
+      locations:
+        Chicago: "America/Chicago"
+        Istanbul: "Europe/Istanbul"
+        Tirane: "Europe/Tirane"
+        #UTC: "UTC"
+      position:
+        top: 0
+        left: 2
+        height: 1
+        width: 1
+      refreshInterval: 15
+      sort: "alphabetical"
+      title: "Clocks B"
+      type: "clocks"
+    covid:
+      enabled: true
+      colors:
+        label: "green"
+        text: "white"
+      countries:
+        - TR
+        - US
+        - AL
+      position:
+        top: 0
+        left: 0
+        height: 2
+        width: 1
+      refreshInterval: 1h
+    feedreader:
+      enabled: true 
+      feeds:
+      - https://www.chicagotribune.com/rss2.0.xml
+      #- http://feeds.bbci.co.uk/news/rss.xml
+      feedLimit: 10
+      position:
+        top: 1
+        left: 1
+        width: 2
+        height: 1
+      refreshInterval: 14400
+    ipinfo:
+      colors:
+        name: "lightblue"
+        value: "white"
+      enabled: true 
+      position:
+        top: 2
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 150
+    power:
+      enabled: true 
+      position:
+        top: 2
+        left: 2
+        height: 1
+        width: 1
+      refreshInterval: 15
+      title: "⚡️"
+    textfile:
+      enabled: false
+      filePath: "~/.config/wtf/config.yml"
+      format: true
+      position:
+        top: 0
+        left: 0
+        height: 4
+        width: 1
+      refreshInterval: 30
+      wrapText: false
+    uptime:
+      args: [""]
+      cmd: "uptime"
+      enabled: true 
+      position:
+        top: 3
+        left: 1
+        height: 1
+        width: 2
+      refreshInterval: 30
+      type: cmdrunner
+    nbascore:
+      enabled: true
+      position:
+        top: 2
+        left: 0
+        height: 1
+        width: 1
+      refreshInterval: 10m
+    devto:
+      enabled: true
+      numberOfArticles: 10
+      position:
+        top: 0
+        left: 3
+        height: 1
+        width: 2
+      contentTag: "showdev" 
+      contentUsername: "victoravelar"
+      contentState: "rising"
+    hackernews:
+      enabled: true
+      numberOfStories: 10
+      position:
+        top: 1
+        left: 3
+        height: 1
+        width: 2
+      storyType: top
+      refreshInterval: 15m
+    subreddit:
+      enabled: true
+      numberOfPosts: 10
+      position:
+        top: 2
+        left: 3
+        height: 1
+        width: 2
+      refreshInterval: 15m
+      sortOrder: top
+      subreddit: "USCIS"
+      topTimePeriod: month
+    yfinance:
+      enabled: true
+      title: "Stock and exchange rate 🚀"
+      sort: true
+      refreshInterval: 1m
+      symbols:
+        - "DOCN"
+        - "GLE.PA"
+        - "ABN.AS"
+        - "ICAD.PA"
+        - "ACA.PA"
+        - "ORA.PA"
+        - "EURUSD=X"
+        - "USDCAD=X"
+        - "CADJPY=X"
+      position:
+        top: 4
+        left: 0
+        height: 2
+        width: 1
