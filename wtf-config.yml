@@ -158,8 +158,20 @@ wtf:
         width: 2
       storyType: top
       refreshInterval: 15m
+    linux-reddit-top5:
+      args: ["print", "-f", "'$num. $url$nl'", "-l", "5", "-t", "month", "r/linux/top"]
+      cmd: "reddio"
+      enabled: true 
+      position:
+        top: 2 
+        left: 3
+        height: 1
+        width: 2
+      refreshInterval: 3000
+      type: cmdrunner
+
     subreddit:
-      enabled: true
+      enabled: false
       numberOfPosts: 10
       position:
         top: 2
