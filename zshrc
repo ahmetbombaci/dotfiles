@@ -70,7 +70,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases 
+plugins=(
 		catimg 
 		chucknorris 
 		command-not-found 
@@ -87,6 +87,8 @@ plugins=(aliases
 		git-prompt 
 		# globalias 
 		mvn 
+		ubuntu
+		aliases 
 		zsh-autosuggestions
 		zsh-syntax-highlighting
 )
@@ -119,6 +121,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias emoji-help="sensible-browser https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/emoji"
+unalias acs
 
 if [ -f ~/.aliases ]; then
     . ~/.aliases
