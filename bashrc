@@ -131,8 +131,18 @@ fi
 
 # HISTIGNORE='man *:ls:ls *:ll:cd *:mkdir *'
 
-colorscript -e tux
-fortune
+if [ $((${RANDOM}%10)) -eq 1 ];
+then
+	if command -v colorscript &> /dev/null
+	then 
+		colorscript -e tux
+	fi 
+	
+	if command -v fortune &> /dev/null
+	then 
+		fortune 
+	fi 
+fi
 
 # Use vim mode instead of default emacs
 set -o vi

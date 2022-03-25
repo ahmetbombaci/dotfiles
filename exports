@@ -10,4 +10,7 @@ export TERMINAL=alacritty
 
 
 export GEM_HOME="$HOME/gems"
-export PATH="$HOME/.cargo/bin:$HOME/gems/bin:$HOME/.emacs.d/bin:$PATH"
+if ! [[ $PATH =~ "$HOME/gems/bin" ]];
+then 
+	export PATH="$HOME/.cargo/bin:$HOME/gems/bin:$HOME/.emacs.d/bin:$PATH"
+fi

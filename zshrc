@@ -135,5 +135,15 @@ if [ -f ~/.exports ]; then
     . ~/.exports
 fi
 
-colorscript -e tux
-fortune
+if [ $((${RANDOM}%10)) -eq 1 ];
+then
+	if command -v colorscript &> /dev/null
+	then 
+		colorscript -e tux
+	fi 
+	
+	if command -v fortune &> /dev/null
+	then 
+		fortune 
+	fi 
+fi
