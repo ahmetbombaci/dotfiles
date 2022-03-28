@@ -146,3 +146,4 @@ fi
 
 # Use vim mode instead of default emacs
 set -o vi
+source ~/.bash_completion/alacritty
