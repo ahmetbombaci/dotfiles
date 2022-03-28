@@ -15,6 +15,7 @@
     /etc/conky/conky.conf:
       path: conky.conf
     ~/.config/alacritty/alacritty.yml:
+    ~/.config/touchegg/touchegg.conf:
     ~/.config/wtf/config.yml:
       path: wtf-config.yml
     ~/.cvsignore:
