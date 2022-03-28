@@ -152,3 +152,4 @@ autoload bashcompinit
 bashcompinit
 source /usr/share/bash-completion/completions/nala
 
+fpath+=${ZDOTDIR:-~}/.zsh_functions
