@@ -1,11 +1,11 @@
-alias uscissucks='source ~/bin/SECRETS; python3 ~/bin/uscis_sucks.py --mtype all --tweet'
-alias uscissucksrandom='source ~/bin/SECRETS; python3 ~/bin/uscis_sucks.py --mtype random --tweet'
+alias uscissucks='source ~/bin/SECRETS; python3 ~/bin/uscis_sucks.py --mtype all'
+alias uscissucksrandom='source ~/bin/SECRETS; python3 ~/bin/uscis_sucks.py --mtype random'
 alias ahmet="asciiart --width 50 ~/Pictures/ahmet.jpg"
 alias dorina="asciiart --width 50 --color ~/Pictures/dorina.jpg"
 alias android-sha1='keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android'
 alias tmux-s1='tmux new-session "tmux source-file ~/session1"'
 # sudo npm install --global cadate
-alias today='cadate --full --calendar islamic'
+alias today='cadate --full --calendar islamic; cadate --full --calendar gregory'
 alias whathappenedtoday='calendar -A 0'
 alias wtf=wtfutil
 alias uscisposts='reddio print -s new -l 15 r/USCIS'
