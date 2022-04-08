@@ -9,6 +9,7 @@ alias today='cadate --full --calendar islamic; cadate --full --calendar gregory'
 alias whathappenedtoday='calendar -A 0'
 alias wtf=wtfutil
 alias uscisposts='reddio print -s new -l 15 r/USCIS'
+alias myshell="ps -p $$"
 
 alias fd=fdfind
 alias open=xdg-open
