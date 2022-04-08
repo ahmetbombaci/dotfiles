@@ -1,3 +1,7 @@
+git-difftastic() {
+	GIT_EXTERNAL_DIFF=difft git log -p --ext-diff
+}
+
 my_man() {
 	section=${2-1}
 	sensible-browser https://linux.die.net/man/$section/$1 &

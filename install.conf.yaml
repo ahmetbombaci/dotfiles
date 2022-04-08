@@ -20,6 +20,7 @@
       path: wtf-config.yml
     ~/.cvsignore:
     ~/.dotfiles: ''
+    ~/.doom.d:
     ~/.exports:
     ~/.functions:
     ~/.gitconfig:
