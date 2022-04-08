@@ -94,6 +94,8 @@ alias tvizle='sensible-browser https://www.canlitv.mobi/'
 # man <cmd>
 # <cmd> --help
 # tldr <cmd>
+# bro <cmd>
+# bro thanks 2 ## gives upvote for the 2nd sample in the last bro command
 # linux.die.net
 alias myman='my_man'
 # quickref.me
