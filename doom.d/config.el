@@ -109,3 +109,10 @@
                      ("https://distrowatch.com/news/dwd.xml" distrowatch linux))))
 
 (setq minimap-window-location 'right)
+(map! :leader
+      (:prefix ("t" . "toggle")
+       :desc "Toggle minimap-mode" "m" #'minimap-mode))
+
+(map! :leader
+      (:prefix ("s" . "search")
+       :desc "Search Merriam Webster" "T" #'mw-thesaurus-lookup-dwim))

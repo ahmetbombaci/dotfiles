@@ -53,6 +53,8 @@
 (package! evil-tutor)
 (package! keypression)
 (package! minimap)
+(package! mw-thesaurus)
+(package! pacmacs)
 (package! password-store)
 (package! tldr)
 (package! wordel
