@@ -51,5 +51,10 @@
 
 (package! elfeed-goodies)
 (package! evil-tutor)
+(package! keypression)
 (package! minimap)
 (package! password-store)
+(package! tldr)
+(package! wordel
+  :recipe (:host github :repo "progfolio/wordel"
+           :files (:defaults "words")))

@@ -86,6 +86,13 @@
                      ("https://www.reddit.com/r/commandline.rss" reddit commandline)
                      ("https://www.reddit.com/r/distrotube.rss" reddit distrotube)
                      ("https://www.reddit.com/r/emacs.rss" reddit emacs)
+                     ("https://this-week-in-rust.org/rss.xml" rust news)
+                     ("https://www.ntv.com.tr/son-dakika.rss" NTV news)
+                     ("https://www.ntv.com.tr/sanat.rss" NTV sanat)
+                     ("http://feeds.bbci.co.uk/news/rss.xml" bbc news)
+                     ("https://usesthis.com/feed.atom")
+                     ;;("https://www.npr.org/rss/podcast.php?id=510289" npr-weekend-update podcast)
+                     ("https://feeds.npr.org/510318/podcast.xml" npr-weekend-update podcast) ;; FIXME instead of podcasts, it displays news
                      ("https://www.gamingonlinux.com/article_rss.php" gaming linux)
                      ("https://hackaday.com/blog/feed/" hackaday linux)
                      ("https://opensource.com/feed" opensource linux)
