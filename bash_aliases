@@ -68,6 +68,7 @@ alias hint_gitignore='sensible-browser https://www.toptal.com/developers/gitigno
 alias hint_jo='jo'
 alias hint_httpbin='curl -X GET "https://httpbin.org/get" -H "accept: application/json"'
 alias hint_ss='ss -ntpl'   # 'ss -peanut'
+alias hint_nsxiv=nsxiv     # minimalist image viewer
 
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
