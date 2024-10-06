@@ -12,15 +12,15 @@
     ~/.bash_functions:
     ~/.bashrc:
     ~/bin:
-    /etc/conky/conky.conf:
-      path: conky.conf
-    ~/.config/alacritty/alacritty.yml:
-    ~/.config/touchegg/touchegg.conf:
-    ~/.config/wtf/config.yml:
-      path: wtf-config.yml
+#    /etc/conky/conky.conf:
+#      path: conky.conf
+#    ~/.config/alacritty/alacritty.yml:
+#    ~/.config/touchegg/touchegg.conf:
+#    ~/.config/wtf/config.yml:
+#      path: wtf-config.yml
     ~/.cvsignore:
     ~/.dotfiles: ''
-    ~/.doom.d:
+#    ~/.doom.d:
     ~/.exports:
     ~/.functions:
     ~/.gitconfig:
