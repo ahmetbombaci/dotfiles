@@ -1,3 +1,5 @@
+alias python=python3
+alias pip=pip3
 alias uscissucks='source ~/bin/SECRETS; python3 ~/bin/uscis_sucks.py --mtype all'
 alias uscissucksrandom='source ~/bin/SECRETS; python3 ~/bin/uscis_sucks.py --mtype random'
 alias ahmet="asciiart --width 50 ~/Pictures/ahmet.jpg"
@@ -12,7 +14,8 @@ alias uscisposts='reddio print -s new -l 15 r/USCIS'
 alias myshell="ps -p $$"
 
 alias fd=fdfind
-alias open=xdg-open
+
+#alias open=xdg-open
 
 alias sensible-browser='brave'
 alias window-info=xwininfo

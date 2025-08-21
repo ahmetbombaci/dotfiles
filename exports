@@ -14,3 +14,11 @@ if ! [[ $PATH =~ "$HOME/gems/bin" ]];
 then 
 	export PATH="$HOME/.cargo/bin:$HOME/gems/bin:$HOME/.emacs.d/bin:$PATH"
 fi
+
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
+
+if [ -f ~/bin/SECRETS ]; then
+    . ~/bin/SECRETS 
+fi
