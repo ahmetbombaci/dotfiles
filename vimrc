@@ -70,7 +70,8 @@ set mouse+=a
 
 " Default value was `sgr`
 " This is good for resizing windows via mouse
-set ttymouse=xterm2
+" set ttymouse=xterm2
+set ttymouse=sgr
 
 
 " Instead of 8, use 4 spaces for tab
